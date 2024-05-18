@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECelliitkgp Task</title>
+</head>
+
+<body>
+    <style>
+        nav {
+            /* margin:10px; */
+            /* padding: 2px; */
+            /* border:2px solid red; */
+            position: sticky;
+        }
+
+        nav ul {
+            /* margin:10px; */
+            /* padding:20px; */
+            display: flex;
+            /* flex-direction: row; */
+            /* justify-content: flex-start; */
+            align-items: center;
+            /* align-items: flex-start; */
+            /* border:2px solid black; */
+            list-style-type: none;
+
+
+        }
+
+
+        @media screen and (max-width:600px) {
+            nav {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content:left;
+                align-items: start;
+
+            }
+            .top{
+                display:none;
+            }
+            #w2 {
+                position: relative;
+                left: auto;
+            }
+            div {
+                width: min-content;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            #login {
+                position: relative;
+                top: 20px;
+                right: 20px;
+
+            }
+        }
+    @media screen and (max-width:300px){
+        /* nav{
+                flex-direction: column;
+                justify-content:left;
+                align-items: start;
+        } */
+        ul{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .top{
+            display: none;
+        }
+        #icon{
+            position:absolute;
+            top:6px;
+            left:6px;
+        }
+        #circle{
+            position:absolute;
+            top:-12px;
+            left:30px;
+        }
+        body div:first-child{
+            position: absolute;
+        }
+        .main{
+            position:absolute;
+            /* left:0px; */
+            justify-content: left;
+        }
+    }
+
+
+
+        #icon {
+            border-radius: 70px;
+            border: 4px solid aqua;
+            padding: 4px;
+            height: 10px;
+            width: 10px;
+            border-style: dashed;
+
+        }
+
+        nav ul li {
+            font-size: 17px;
+            padding: 5px 40px;
+            white-space: 20px;
+            text-decoration: none;
+            color: solid black;
+            transition-duration: 0.8s;
+            transition-property: all;
+            /* border:2px solid blue; */
+
+
+        }
+
+        a:any-link {
+            color: black;
+            text-decoration-line: none;
+        }
+
+        a:any-link:hover {
+            text-decoration-line: underline;
+            font-weight: 575;
+        }
+
+        #circle {
+            font-size: 22px;
+            font-family: sans-serif;
+        }
+
+        .top {
+            padding: 2px 30px;
+
+        }
+
+        #right {
+            margin: 40px;
+        }
+
+        #login {
+            border-color: aquamarine;
+            padding: 18% 110%;
+            text-decoration-color: aquamarine;
+            font-weight: 700;
+            color: aqua;
+            /* margin:30%; */
+            transition-duration: 0.8s;
+            transition-property: all;
+        }
+
+        #login:hover {
+            /* border: 3px solid black; */
+            transform: scale(1.04);
+        }
+
+        .head {
+            background-color: rgb(230, 247, 255);
+            margin:auto;
+            position:absolute;
+            
+        }
+        /* body div:first-child{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+        } */
+        .main {
+            display: flex;
+            text-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 300px;
+            padding: 0px 30px;
+        }
+
+        #w1 {
+            font-weight: bold;
+            font-size: 300%;
+            font-family: sans-serif;
+            position: relative;
+            top: 40px;
+            text-align: center;
+        }
+
+        #w2 {
+            font-size: medium;
+            margin: 60px 510px 15px 510px;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        div input {
+            margin: 14px;
+            padding: 3px 10px;
+            height: 35px;
+            align-items: center;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            border-radius: 3px;
+            background-color: aqua;
+            text-align: center;
+            color: beige;
+            font-weight: 650;
+            font-size: medium;
+            border-color: aqua;
+            border-style: hidden;
+            transition-duration: 0.8s;
+            transition-property: all;
+        }
+
+        div input:hover {
+            transform: scale(1.04);
+        }
+
+        div img {
+            margin: 40px;
+            height: 35vw;
+            width: 70%;
+            border-style: none;
+            border: 1px solid #ddd;
+            display: grid;
+            padding: 5px;
+            /* width: 150px; */
+            /* transition-delay: 1s; */
+            transition-duration: 1s;
+            transition-property: all;
+
+        }
+
+        div img:hover {
+            transform: scale(1.02);
+            /* transform-style: inherit; */
+
+        }
+
+        .ellipse-shape {
+            width: 1000px;
+            height: 500px;
+            background-color: lightblue;
+            clip-path: ellipse(500px 250px at 50% 50%);
+        }
+    </style>
+    <nav>
+        <ul>
+            <p id="one">
+                <li><a href="vS code">Features</a></li>
+                <li><a href="vS code">Pricing</a></li>
+                <li><a href="vS code">Testinomials</a></li>
+                <li><a href="vS code">Resources</a></li>
+            </p>
+            <p class="top"></p>
+            <li id="icon">
+                <p></p>
+            </li>
+            <p id="circle">Circle</p>
+            <p class="top" id="right"></p>
+
+            <p id="two">
+                <li><a href="vS code">Company</a></li>
+                <li><a href="vS code">Contact</a></li>
+                <li><input type="button" value="Login" id="login"></li>
+            </p>
+        </ul>
+
+    </nav>
+    <div class="head">
+        <div class="main" id="w1">A powerful online engagement tool that's intuitive and simple to use. </div>
+        <div class="main" id="w2">With stellar one click report and unmatched support.See how Circle will make a
+            difference in your business</div>
+        <div class="main" id="w3"><input type="button " value="Get started free  >"></div>
+        <img src="office.png" alt="image" style="display:block; margin-left:auto; margin-right:auto;"
+            usemap="#image-map" class="ellipse-shape">
+
+        <map name="image-map">
+            <area shape="ellipse" coords="100px 50px " href="section1.html">
+            <!-- Define more areas as needed -->
+        </map>
+
+    </div>
+</body>
+
+</html>
